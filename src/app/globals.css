@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 .container{
-    margin-inline: 100px;
+    width: 90%;
+    margin: 0 auto;
 }
