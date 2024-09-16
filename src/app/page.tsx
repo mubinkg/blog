@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-    <div>Fresh app</div>
+    <div className="container">Fresh app</div>
   );
 }
