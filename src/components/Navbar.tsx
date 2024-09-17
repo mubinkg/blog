@@ -6,7 +6,7 @@ import Notification from './icons/Notification'
 
 const Navbar = () => {
     return (
-        <div style={{ boxShadow: "0px 30px 80px 0px rgba(47, 65, 88, 0.2)", position: "sticky", top: "0", background: "white"}}>
+        <div style={{ boxShadow: "0px 30px 80px 0px rgba(47, 65, 88, 0.2)", position: "sticky", top: "0", background: "white", zIndex: 1000}}>
             <div className='container py-5'>
                 <div className='flex items-center content-center justify-between'>
                     <Logo />
