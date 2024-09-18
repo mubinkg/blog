@@ -1,9 +1,16 @@
+'use client'
+
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Logo = () => {
+    const router = useRouter()
+
     return (
         <div>
             <svg
+                onClick={()=>router.push('/')}
+                className='cursor-pointer'
                 width={50}
                 height={62}
                 viewBox="0 0 50 62"

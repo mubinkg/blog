@@ -3,7 +3,7 @@ import React from 'react'
 
 const Event = () => {
   return (
-    <div style={{borderRadius: "0px 0px 230px 230px; opacity: 0px", boxShadow: "0px 4px 6px -2px #10182808; box-shadow: 0px 12px 16px -4px #10182814"}} className='flex'>
+    <div style={{borderRadius: "0px 0px 230px 230px", boxShadow: "0px 12px 16px -4px #10182814"}} className='flex'>
       <div>
         <Image src='/card1.png' alt='card one' width={327} height={361}/>
       </div>

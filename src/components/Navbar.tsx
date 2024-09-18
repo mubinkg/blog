@@ -16,7 +16,7 @@ const Navbar = () => {
                             <Link href="#">Едукативни Содржини</Link>
                             <Link href="#">Годишна Конференција</Link>
                             <Link href="#">Настани</Link>
-                            <Link href="#">Блог</Link>
+                            <Link href="blogs">Блог</Link>
                             <Search />
                         </div>
                         <div className='flex gap-7 items-center content-center'>
