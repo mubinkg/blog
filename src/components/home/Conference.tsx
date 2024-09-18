@@ -3,8 +3,8 @@ import React from 'react'
 
 const Conference = () => {
   return (
-    <div className='my-20 flex'>
-      <div className='flex flex-col gap-14'>
+    <div className='my-32 flex justify-between'>
+      <div className='flex flex-col gap-14 w-[607px] mt-32'>
         <h1 className='text-4xl'>Најголемиот HR настан на нашите простори - Годишната HR конференција на МАЧР</h1>
         <p>Меѓународна размена на искуства во полето на човечки ресурси и константно движење во чекор со светските трендови.</p>
         <div className='flex'>
