@@ -3,7 +3,7 @@ import Slider from './Slider'
 
 const Sliders = () => {
     return (
-        <div className='flex overflow-x-auto gap-12 my-10'>
+        <div className='flex gap-12 my-10'>
             <Slider/>
             <Slider/>
             <Slider/>
