@@ -6,7 +6,7 @@ export default function Page(){
     return (
         <div>
            <div className="container">
-            <Hero/>
+            <Hero leftImage="heroleft.png" rightImage="blogright.png"/>
            </div>
            <div className="container">
             <Courses/>

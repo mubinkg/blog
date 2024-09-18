@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        <Hero />
+        <Hero leftImage="person1.png" rightImage="person2.png"/>
       </div>
       <Sliders />
       <div className="container mb-20">
