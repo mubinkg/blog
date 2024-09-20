@@ -3,6 +3,7 @@ import Airticle from './Airticle'
 import { title } from 'process'
 import Image from 'next/image'
 import Reactions from '../Reactions'
+import File from '../icons/File'
 
 const AirticleList = () => {
     return (
@@ -46,6 +47,21 @@ const AirticleList = () => {
                             }
                         ].map(({ title, body, note }) => (<div key={title}><Airticle title={title} body={body} note={note} /></div>))
                     }
+                    <div className='mt-10'>
+                        <Reactions like={335} love={45} comment={34} />
+                    </div>
+                    <div>
+                        <div style={{ border: "2px solid orange", height: "338px" }} className='rounded-md flex flex-col justify-between py-5'>
+                            <div className='flex gap-5 pt-3 px-5'>
+                                <Image src='/commentavator.png' alt='coment image' width={69} height={65} />
+                                <h2 className='text-primary'>Според мене тестовите и проценките можат да бидат од голема помош при проценката на вештините и компетенциите на кандидатите... </h2>
+                            </div>
+                            <div className='flex justify-between px-5'>
+                                <File/>
+                                <button className='text-white bg-orange-400 px-6 py-3 rounded-full'>Коментирај</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className='4/12 pl-32'>
                     <div>
@@ -61,9 +77,6 @@ const AirticleList = () => {
                         }
                     </div>
                 </div>
-            </div>
-            <div className='mt-10'>
-                <Reactions like={335} love={45} comment={34}/>
             </div>
         </>
     )
