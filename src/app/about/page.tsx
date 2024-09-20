@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Sliders from "@/components/Sliders";
+import UserCards from "@/components/about/UserCards";
 import Image from "next/image";
 
 export default function Page() {
@@ -69,6 +70,9 @@ export default function Page() {
                             Дарко магистрираше економски науки на Економскиот факултет во Љубљана и е магистер по бизнис администрација и организациски науки, со специјализација во менаџментот со човечките ресурси, а исто така е дипломиран машински инженер и автор на повеќе стручни и научно-истражувачки трудови.
                         </p>
                     </div>
+                </div>
+                <div>
+                    <UserCards/>
                 </div>
             </div>
         </div>
