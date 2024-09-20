@@ -4,6 +4,7 @@ import { title } from 'process'
 import Image from 'next/image'
 import Reactions from '../Reactions'
 import File from '../icons/File'
+import CommentList from '../CommentList'
 
 const AirticleList = () => {
     return (
@@ -57,10 +58,13 @@ const AirticleList = () => {
                                 <h2 className='text-primary'>Според мене тестовите и проценките можат да бидат од голема помош при проценката на вештините и компетенциите на кандидатите... </h2>
                             </div>
                             <div className='flex justify-between px-5'>
-                                <File/>
+                                <File />
                                 <button className='text-white bg-orange-400 px-6 py-3 rounded-full'>Коментирај</button>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <CommentList/>
                     </div>
                 </div>
                 <div className='4/12 pl-32'>
