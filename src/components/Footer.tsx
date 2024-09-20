@@ -4,7 +4,7 @@ import Logo from './icons/Logo'
 const Footer = () => {
   return (
     <div className='container'>
-      <hr />
+      <hr className='mt-32'/>
       <div className='flex my-[50px]'>
         <div className='w-6/12'>
           <Logo />
