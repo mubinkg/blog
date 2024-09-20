@@ -15,7 +15,7 @@ const Navbar = () => {
                             <Link href="#">Информативни Содржини</Link>
                             <Link href="#">Едукативни Содржини</Link>
                             <Link href="#">Годишна Конференција</Link>
-                            <Link href="#">Настани</Link>
+                            <Link href="event-listing">Настани</Link>
                             <Link href="blogs">Блог</Link>
                             <Search />
                         </div>
