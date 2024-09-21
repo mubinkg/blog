@@ -11,7 +11,7 @@ export default function Page() {
             <div className="my-40">
                 <Sliders/>
             </div>
-            <div className="conatiner">
+            <div className="container">
                 <Progress/>
             </div>
         </div>
