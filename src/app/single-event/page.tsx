@@ -1,4 +1,7 @@
 import Sliders from "@/components/Sliders";
+import UserCardItem from "@/components/about/UserCardItem";
+import Agenda from "@/components/event/Agenda";
+import Events from "@/components/home/Events";
 import { FbSmall } from "@/components/icons/FbSmall";
 import InstaSmall from "@/components/icons/InstaSmall";
 import LinkIcon from "@/components/icons/LinkIcon";
@@ -56,7 +59,7 @@ export default function Page() {
                     </div>
                     <div className="mr-20 relative">
                         <Image src='/singleevent1.png' width={551} height={891} alt="signle" />
-                        <div className="right-[-100px] top-[700px] bg-white absolute flex items-center gap-5 py-1 px-2 rounded-full" style={{boxShadow: "0px 30px 80px 0px #2F415833"}}>
+                        <div className="right-[-100px] top-[700px] bg-white absolute flex items-center gap-5 py-1 px-2 rounded-full" style={{ boxShadow: "0px 30px 80px 0px #2F415833" }}>
                             <div className="bg-orange-400 p-5 rounded-full">
                                 <LinkIcon />
                             </div>
@@ -66,6 +69,24 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <h1 className="text-4xl mt-40 my-[52px]">Агенда на настанот:</h1>
+                    <h3 className="text-2xl">Четврток, 25 Јули</h3>
+                    <div className="mt-10">
+                        <Agenda time="10:00" title='Регистрација и утринско кафе' content="Пристигнување и неформално запознавање меѓу учесниците." />
+                    </div>
+                </div>
+                <div className="flex mt-32 justify-between">
+                    <h2 className="text-5xl">Говорници на настанот:</h2>
+                    <div className="flex gap-5">
+                        <UserCardItem />
+                        <UserCardItem />
+                        <UserCardItem />
+                    </div>
+                </div>
+                <div className="mt-20">
+                    <Events title='Слични настани' />
                 </div>
             </div>
         </div>
