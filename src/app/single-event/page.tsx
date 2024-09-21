@@ -7,7 +7,9 @@ import InstaSmall from "@/components/icons/InstaSmall";
 import LinkIcon from "@/components/icons/LinkIcon";
 import LinkedinSmall from "@/components/icons/LinkedinSmall";
 import YtSmall from "@/components/icons/YtSmall";
+import { time } from "console";
 import Image from "next/image";
+import { title } from "process";
 
 export default function Page() {
     return (
@@ -73,9 +75,31 @@ export default function Page() {
                 <div>
                     <h1 className="text-4xl mt-40 my-[52px]">Агенда на настанот:</h1>
                     <h3 className="text-2xl">Четврток, 25 Јули</h3>
-                    <div className="mt-10">
-                        <Agenda time="10:00" title='Регистрација и утринско кафе' content="Пристигнување и неформално запознавање меѓу учесниците." />
-                    </div>
+                    {
+                        [
+                            {
+                                time: "10:00",
+                                title: "Регистрација и утринско кафе",
+                                content: "Пристигнување и неформално запознавање меѓу учесниците."
+                            },
+                            {
+                                time: "10:30",
+                                title: "Вовед и отворање на настанот",
+                                content: "Поздравен говор од организаторот и кратко претставување на агендата."
+                            },
+                            {
+                                time: "11:00",
+                                title:"Презентација: Важноста на соработката меѓу HR одделот и синдикатот",
+                                content: "Клучни точки: Значењето на заедничката работа, придобивки и потенцијални проблеми.",
+                                note: "Презентер",
+                                noteBody: "Елица Перчинкова"
+                            }
+                        ].map(({time,title, content,noteBody, note }) => (
+                            <div className="mt-10">
+                                <Agenda noteBody={noteBody} note={note} key={title} time={time} title={title} content={content} />
+                            </div>
+                        ))
+                    }
                 </div>
                 <div className="flex mt-32 justify-between">
                     <h2 className="text-5xl">Говорници на настанот:</h2>
