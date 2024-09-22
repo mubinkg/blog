@@ -10,7 +10,7 @@ import UserCard from '../UserCard'
 const Profile = () => {
     return (
         <div className='flex gap-10'>
-            <div className='w-[509px] h-[744px] rounded-3xl' style={{ boxShadow: "0px 9px 80px 0px #2F41581F" }}>
+            <div className='mt-[88px] w-[509px] h-[744px] rounded-3xl' style={{ boxShadow: "0px 9px 80px 0px #2F41581F" }}>
                 <div className='flex flex-col items-center pt-[27px] gap-4'>
                     <div>
                         <Image src='/avatar.png' alt='avatar' width={215} height={214} />
@@ -49,7 +49,7 @@ const Profile = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-8/12'>
+            <div className='mt-[88px] w-8/12'>
                 <h1 className='mt-[40px] font-semibold text-3xl mb-[56px]'>Кратка биографија</h1>
                 <p className='text-body leading-8'>
                     Јас сум Валентина Стојанова, искусен HR регрутер со над 10 години работно искуство во полето на човечките ресурси. Својата кариера ја започнав како помлад HR асистент и со текот на годините напредував, стекнувајќи богато знаење и вештини во регрутирањето и управувањето со таленти. Позната сум по мојот професионализам, одлична комуникација и способност да пронајдам и привлечам врвни таленти за различни индустрии. Работев со големи компании, помагајќи им да изградат силни и ефикасни тимови. Со посветеност кон мојата професија и постојана желба за усовршување, се стремам да бидам лидер и ментор во областа на HR.
